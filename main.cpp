@@ -7,15 +7,17 @@ cifras se colocan ceros a la izquierda del primer número.*/
 #include <iostream>
 
 // variables globales y macros
-#define TAM (int)10
+#define TAM (int)50
 
 using namespace std;
 
 int main()
 {
-    char a[TAM]="AB11CD44";
+    char a[TAM]="AB11CD44EF5X5";
     for(int i =0;i<TAM;++i){
-        cout<<a[i]<<endl;
+        if(a[i]!='\0'){
+            cout<<a[i]<<endl;
+        }
     }
     cout<<"imprimir solo los numeros de la cadena original"<<endl;
     for(int var=0;var<TAM;++var){
