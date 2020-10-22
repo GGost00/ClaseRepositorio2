@@ -6,10 +6,17 @@ cifras se colocan ceros a la izquierda del primer número.*/
 
 #include <iostream>
 
+// variables globales y macros
+#define TAM (int)10
+
 using namespace std;
 
 int main()
 {
+    char a[]="AB11CD44";
+    for(int i =0;i<TAM;++i){
+        cout<<a[i]<<endl;
+    }
     cout << "Hello World!" << endl;
     return 0;
 }
