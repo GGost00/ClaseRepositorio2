@@ -13,10 +13,16 @@ using namespace std;
 
 int main()
 {
-    char a[]="AB11CD44";
+    char a[TAM]="AB11CD44";
     for(int i =0;i<TAM;++i){
         cout<<a[i]<<endl;
     }
-    cout << "Hello World!" << endl;
+    cout<<"imprimir solo los numeros de la cadena original"<<endl;
+    for(int var=0;var<TAM;++var){
+        if(a[var]>'0' && a[var]<='9'){
+            cout<<a[var]<<endl;
+        }
+    }
+
     return 0;
 }
