@@ -14,17 +14,21 @@ using namespace std;
 int main()
 {
     char a[TAM]="AB11CD44EF5X5";
-    for(int i =0;i<TAM;++i){
-        if(a[i]!='\0'){
-            cout<<a[i]<<endl;
-        }
-    }
+    char numeros[50]={0};
+    int contDig=0;
+
     cout<<"imprimir solo los numeros de la cadena original"<<endl;
+//    int numero=0;
+//    int contadorDigitos=0;
+
     for(int var=0;var<TAM;++var){
         if(a[var]>'0' && a[var]<='9'){
-            cout<<a[var]<<endl;
+            numeros[contDig++]=a[var];
         }
     }
+    for(int var=contDig-1;var>=0;--var){
+        cout<<numeros[var]<<endl;
 
+    }
     return 0;
 }
